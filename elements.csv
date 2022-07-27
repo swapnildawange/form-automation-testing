@@ -1,0 +1,7 @@
+Attributes
+"{'aria-label': 'First name', 'autocapitalize': 'sentences', 'autocomplete': 'off', 'class': 'whsOnd zHQkBf', 'data-initial-value': '', 'id': 'firstName', 'jsname': 'YPqjbf', 'name': 'firstName', 'spellcheck': 'false', 'tabindex': '0', 'type': 'text'}"
+"{'aria-label': 'Last name', 'autocapitalize': 'sentences', 'autocomplete': 'off', 'class': 'whsOnd zHQkBf', 'data-initial-value': '', 'id': 'lastName', 'jsname': 'YPqjbf', 'name': 'lastName', 'spellcheck': 'false', 'tabindex': '0', 'type': 'text'}"
+"{'aria-label': 'Username', 'autocapitalize': 'none', 'autocomplete': 'username', 'class': 'whsOnd zHQkBf', 'data-initial-dir': 'ltr', 'data-initial-value': '', 'dir': 'ltr', 'id': 'username', 'jsname': 'YPqjbf', 'name': 'Username', 'spellcheck': 'false', 'tabindex': '0', 'type': 'email'}"
+"{'aria-label': 'Password', 'autocapitalize': 'off', 'autocomplete': 'new-password', 'class': 'whsOnd zHQkBf', 'data-initial-dir': 'ltr', 'data-initial-value': '', 'dir': 'ltr', 'jsname': 'YPqjbf', 'name': 'Passwd', 'spellcheck': 'false', 'tabindex': '0', 'type': 'password'}"
+"{'aria-label': 'Confirm', 'autocapitalize': 'off', 'autocomplete': 'new-password', 'class': 'whsOnd zHQkBf', 'data-initial-dir': 'ltr', 'data-initial-value': '', 'dir': 'ltr', 'jsname': 'YPqjbf', 'name': 'ConfirmPasswd', 'spellcheck': 'false', 'tabindex': '0', 'type': 'password'}"
+"{'aria-labelledby': 'selectioni1', 'class': 'VfPpkd-muHVFf-bMcfAe', 'jsaction': 'focus:AHmuwe; blur:O22p3e; change:WPi0i;', 'jsname': 'YPqjbf', 'type': 'checkbox'}"
