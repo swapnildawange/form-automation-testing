@@ -144,28 +144,33 @@ class Xpath_Util:
         return self.button_contains_xpath
 
 
-#-------START OF SCRIPT--------
-if __name__ == "__main__":
-    print ("Start of %s"%__file__)
+# #-------START OF SCRIPT--------
+# if __name__ == "__main__":
+#     print ("Start of %s"%__file__)
 
-    #Initialize the xpath object
-    xpath_obj = Xpath_Util()
+#     #Initialize the xpath object
+#     xpath_obj = Xpath_Util()
 
-    #Get the URL and parse
-    # url = input("Enter URL: ")
-    url = "https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp"
+#     #Get the URL and parse
+#     # url = input("Enter URL: ")
+#     url = "https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp"
 
-    #Create a chrome session
-    driver = webdriver.Chrome()
-    driver.get(url)
+#     #Create a chrome session
+#     driver = webdriver.Chrome()
+#     driver.get(url)
 
-    #Parsing the HTML page with BeautifulSoup
-    page = driver.execute_script("return document.body.innerHTML").\
-    encode('utf-8').decode('latin-1')#returns the inner HTML as a string
-    soup = BeautifulSoup(page, 'html.parser')
+#     #Parsing the HTML page with BeautifulSoup
+#     page = driver.execute_script("return document.body.innerHTML").\
+#     encode('utf-8').decode('latin-1')#returns the inner HTML as a string
+#     soup = BeautifulSoup(page, 'html.parser')
 
-    #execute generate_xpath
-    if xpath_obj.generate_xpath(soup) is False:
-        print ("No XPaths generated for the URL:%s"%url)
+#     #execute generate_xpath
+#     if xpath_obj.generate_xpath(soup) is False:
+#         print ("No XPaths generated for the URL:%s"%url)
 
-    driver.quit()
+#     driver.quit()
+
+
+def saveFile(attributes):
+    df = pd.DataFrame({'Attributes': attributes})
+    df.to_csv('elements.csv', index=False, encoding='utf-8')
