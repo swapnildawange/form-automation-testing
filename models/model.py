@@ -1,4 +1,5 @@
 
+URL = "https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp"
 
 # Guessable elements in a HTML for our purpose
 guessableElements = ["input", "button"]

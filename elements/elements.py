@@ -1,12 +1,11 @@
 from faker import Faker
-
-# class to get the
-fake = Faker()
+from selenium.webdriver.common.by import By
 
 
 class Elements:
-    def __init__(self) -> None:
-        fake = Faker()
+    def __init__(self,driver) -> None:
+        self.fake = Faker()
+        self.driver = driver
 
     def getAttributes(element):
         attrs = driver.execute_script(
@@ -17,9 +16,9 @@ class Elements:
         elem = driver.find_element(By.ID, 'firstName')
         elem.send_keys('seleniumhq')
 
-    def getInputElements(form):
-        inputs = form.find_elements(By.TAG_NAME, "input")
-        return inputs
+    def getElement(self,xpath):
+        element = self.driver.find_element(By.XPATH,xpath)
+        return element
 
     def defaultHandler(self):
         pass
